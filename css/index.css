@@ -1,0 +1,88 @@
+:root {
+	--primary-color: #2d2254;
+	--secondary--color: #f5c42f;
+	--text-color: #c5bbec;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0%;
+	padding: 0%;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background: var(--primary-color);
+	line-height: 1.6;
+}
+
+h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, span::selection, i::selection {
+	color: #fff;
+	background-color: #000;
+}
+
+h1 {
+	color: var(--text-color);
+	text-align: center;
+	margin-top: 5rem;
+	margin-bottom: 6rem;
+	letter-spacing: 0.3rem;
+}
+
+.card {
+	background: rgba(255, 255, 255, 0.1);
+	margin-bottom: 3rem;
+}
+
+.card p {
+	color: var(--text-color);
+}
+
+.card h5 {
+	color: var(--secondary--color);
+}
+
+.card img {
+	width: 50%;
+	margin: auto;
+	padding: 1rem;
+}
+
+.syllabus {
+	margin-top: 10rem;
+}
+
+.btn {
+	display: inline-block;
+	border: 0;
+	background: var(--secondary--color);
+	color: #fff;
+	border-radius: 20px;
+	padding: 8px 30px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 16px;
+	margin-top: 10px;
+}
+
+.btn:hover {
+	transform: scale(0.98);
+}
+
+.btn-start {
+	margin-top: 5rem;
+	margin-bottom: 1rem;
+}
+
+.p-01 {
+	letter-spacing: 0.1rem;
+	color: #c5bbec;
+	background: rgba(255, 255, 255, 0.1);
+	padding: 1rem;
+	border-radius: 1rem;
+}
+
+.p-01::first-letter {
+	color: #f5c42f;
+	font-size: 2rem;
+}
